@@ -25,7 +25,7 @@ class PublicacionesController extends Controller
     $usuario = User::find($id);
     $tipopublicaciones = TipoPublicaciones::all();
     $publicaciones = $usuario->publicaciones();
-    $rutaarchivos = "/storage/archivos/";
+    $rutaarchivos = "storage/archivos/";
 
     return view("formularios.form_publicaciones_usuario")
       ->with("usuario", $usuario)

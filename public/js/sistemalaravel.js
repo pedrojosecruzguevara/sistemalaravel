@@ -18,8 +18,8 @@ function cargarlistado(listado) {
   //función para cargar los diferentes en general
   if (listado == 1) { var url = "listado_usuarios"; }
   if (listado == 2) { var url = "listado_publicaciones/0"; }
-  if (listado == 3) { var url = "reportes"; }
-  if (listado == 4) { var url = "listado_graficas"; }
+  if (listado == 3) { var url = "reportes"; }           // lección 14
+  if (listado == 4) { var url = "listado_graficas"; }   // lección 15
   $("#contenido_principal").html($("#cargador_empresa").html());
   $.get(url, function (resul) {
     $("#contenido_principal").html(resul);
@@ -57,7 +57,7 @@ $(document).on("submit", ".form_entrada", function (e) {
     error: function (data) {
       var lista_errores = "";
       var errors = $.parseJSON(data.responseText);
-      var titulo = "<br/><div class='rechazado'><label style='color:#FA206A'>Existen Errores de Validacion</label><ul>";
+      var titulo = "<br/><div class='rechazado'><label style='color:#FA206A'>Existen Errores de Validación</label><ul>";
       $.each(errors, function (index, value) {
         lista_errores += '<li style="color:#FA206A;" >' + value + '</li>';
       })
@@ -146,7 +146,6 @@ $(document).on("submit", ".formarchivo", function (e) {
     //si ha ocurrido un error
     error: function (data) {
       alert("ha ocurrido un error");
-
     }
   });
   irarriba();

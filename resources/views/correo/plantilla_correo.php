@@ -12,7 +12,6 @@
          padding-left: 20px;
          padding-right: 20px;
       }
-
       .body {
          background-color: #ECECEC;
       }
@@ -33,6 +32,6 @@
    </div>
    <hr>
    <div class=".div_contenido"> <?= $contenido;   ?></div>
-   <div class=".div_contenido"> Gracias por participar en el proyecto pymasoft <br /> NO OLVIDE VISITAR NUESTRO SITIO WEB <b>http://pymasoft.pym:8888</b> </div>
+   <div class=".div_contenido"> Gracias por participar en el proyecto pymasoft <br /> NO OLVIDE VISITAR NUESTRO SITIO WEB <b>http://biblioteca.pym/</b> </div>
 </body>
 </html>

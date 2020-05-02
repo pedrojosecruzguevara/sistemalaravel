@@ -1,17 +1,6 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
-//rutas accessibles slo si el usuario no se ha logueado
+//rutas accessibles sólo si el usuario no se ha logueado
 Route::group(['middleware' => 'guest'], function () {
   Route::get('login', 'Auth\AuthController@getLogin');
   Route::post('login', ['as' => 'login', 'uses' => 'Auth\AuthController@postLogin']);
@@ -36,9 +25,9 @@ Route::group(['middleware' => 'auth'], function () {
 
   Route::get('reportes', 'PdfController@index');
   Route::get('crear_reporte_porpais/{tipo}', 'PdfController@crear_reporte_porpais');
-  Route::get('listado_graficas', 'GraficasController@index');
-  Route::get('grafica_registros/{anio}/{mes}', 'GraficasController@registros_mes');
-  Route::get('grafica_publicaciones', 'GraficasController@total_publicaciones');
+  Route::get('listado_graficas', 'GraficasController@index');                         // lección 15
+  Route::get('grafica_registros/{anio}/{mes}', 'GraficasController@registros_mes');   // lección 15
+  Route::get('grafica_publicaciones', 'GraficasController@total_publicaciones');      // lección 15
   Route::get('/mostrar_errores', 'UsuariosController@mostrar_errores');
 });
 
@@ -66,6 +55,8 @@ Route::group(['middleware' => 'usuarioAdmin'], function () {
   Route::post('agregar_proyectos_usuario', 'ProyectosController@agregar_proyectos_usuario');
   Route::get('borrar_proyecto/{id}', 'ProyectosController@borrar_proyecto');
 });
+
+//rutas accessibles solo para el usuario standard
 Route::group(['middleware' => 'usuarioStandard'], function () {
   Route::get('info_datos_usuario/{id}', 'UsuariosController@info_datos_usuario');
 });

@@ -19,6 +19,7 @@ class UsuarioRequest extends Request
             'apellidos' => 'required',
             'pais' =>   'required',
             'ciudad' => 'required|Alpha',
+            'telefono' => 'required|Numeric|min:10|max:15',
             'institucion' => 'required|Alpha',
             'ocupacion' => 'required|Alpha',
             'tipousuario' => 'required|Numeric|min:1|max:2',
@@ -30,14 +31,15 @@ class UsuarioRequest extends Request
         return [
             'nombres.required' =>  'Ingresar Nombres es obligatorio',
             'apellidos.required' =>  'Ingresar Apellidos es obligatorio',
-            'pais.required' =>  'el pais es un campo obligatorio',
+            'pais.required' =>  'El país es un campo obligatorio',
             'ciudad.required' =>  'Ingresar una ciudad es obligatorio',
-            'ciudad.alpha' =>  'la ciudad no puede contener numeros en su nombre',
+            'ciudad.alpha' =>  'La ciudad no puede contener números en su nombre',
             'email.required' =>  'Ingresar un email es obligatorio',
-            'email.email' =>  'el email debe tener un formato valido',
-            'institucion.required' =>  'Ingresar una institucion es obligatorio',
-            'ocupacion.required' =>  'Ingresar la ocupacion es obligatorio',
-            'tipousuario.numeric' =>  'Ingresar un tipo de usuario valido ides entre 1 y 2',
+            'email.email' =>  'El email debe tener un formato válido',
+            'telefono.required' =>  'Ingresar un teléfono es obligatorio',
+            'institucion.required' =>  'Ingresar una institución es obligatorio',
+            'ocupacion.required' =>  'Ingresar la ocupación es obligatorio',
+            'tipousuario.numeric' =>  'Ingresar un tipo de usuario válido ides entre 1 y 2',
         ];
     }
 

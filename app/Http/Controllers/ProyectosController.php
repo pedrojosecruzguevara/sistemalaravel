@@ -10,10 +10,8 @@ use Storage;
 use Illuminate\Support\Facades\Validator;
 use App\Proyectos;
 use App\User;
-
 class ProyectosController extends Controller
 {
-
     public function index()
     {
         //

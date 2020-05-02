@@ -16,12 +16,13 @@ return [
         'fotografias' => [
             'driver' => 'local',
             'root'   => public_path('storage/fotografias'),
+            // 'root'   => storage_path('fotografias'),
         ],
 
         'archivos' => [
             'driver' => 'local',
-            'root'   => public_path('storage/archivos'),
-            // 'root'   => storage_path('archivos'),
+            // 'root'   => public_path('storage/archivos'),
+            'root'   => storage_path('archivos'),
         ],
 
         'ftp' => [

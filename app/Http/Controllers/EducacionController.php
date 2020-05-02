@@ -10,8 +10,6 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Educacion;
 use App\TipoEducacion;
-
-
 class EducacionController extends Controller
 {
     public function __construct()
