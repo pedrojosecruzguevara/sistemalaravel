@@ -211,8 +211,8 @@ class UsuariosController extends Controller
 			return view("mensajes.msj_rechazado")->with("msj", "Error al actualizar el password");
 		}
 	}
+	
 	//lección 09
-
 	public function form_cargar_datos_usuarios()
 	{
 		return view("formularios.form_cargar_datos_usuarios");

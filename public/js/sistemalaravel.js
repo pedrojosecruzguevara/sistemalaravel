@@ -190,6 +190,7 @@ function borrareducacion(arg) {
   })
 }
 
+//lección 11
 function mostrardiv_publicaciones(arg) {
   $("#info_libro").hide();
   $("#info_revista").hide();
@@ -197,6 +198,7 @@ function mostrardiv_publicaciones(arg) {
   if (arg == 4) { $("#info_libro").hide(); $("#info_revista").show(); }
 }
 
+//lección 11
 function borrarpublicacion(arg) {
   var url = "borrar_publicacion/" + arg + "";
   var divresul = "notificacion_resul_fapu";

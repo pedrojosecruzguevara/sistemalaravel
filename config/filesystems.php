@@ -20,7 +20,8 @@ return [
 
         'archivos' => [
             'driver' => 'local',
-            'root'   => storage_path('archivos'),
+            'root'   => public_path('storage/archivos'),
+            // 'root'   => storage_path('archivos'),
         ],
 
         'ftp' => [

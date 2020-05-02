@@ -2,7 +2,6 @@
 
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
-
 class CrearTablaPublicaciones extends Migration
 {
     public function up()
@@ -11,7 +10,7 @@ class CrearTablaPublicaciones extends Migration
             $table->increments('id');
             $table->integer('idUsuario')->unsigned();
             $table->index('idUsuario');
-            $table->foreign('idUsuario') ->references('id')->on('users') ->onDelete('cascade');  //llave foranea
+            $table->foreign('idUsuario') ->references('id')->on('users') ->onDelete('cascade');  //llave foránea
             $table->integer('idTipopublicacion');
             $table->string('titulo',150);
             $table->string('autores',100);

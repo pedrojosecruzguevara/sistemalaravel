@@ -11,7 +11,6 @@ class CrearTablaTiposPublicaciones extends Migration
             $table->increments('id');
             $table->string('titulo',40);
             $table->timestamps();
-           
         });
     }
 
