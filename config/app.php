@@ -25,6 +25,7 @@ return [
          */
         Barryvdh\DomPDF\ServiceProvider::class,
         // 'Maatwebsite\Excel\ExcelServiceProvider',
+        Greggilbert\Recaptcha\RecaptchaServiceProvider::class,
         Maatwebsite\Excel\ExcelServiceProvider::class,
         Illuminate\Foundation\Providers\ArtisanServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
@@ -96,5 +97,6 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+        'Recaptcha' => Greggilbert\Recaptcha\Facades\Recaptcha::class,
     ],
 ];

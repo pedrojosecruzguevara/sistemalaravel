@@ -94,6 +94,7 @@ return [
     'not_regex'            => 'El formato del campo :attribute es inválido.',
 	'numeric'              => 'El campo :attribute debe ser un número.',
     'present'              => 'El campo :attribute debe estar presente.',
+    "recaptcha"            => 'El captcha no es correcto',
     'regex'                => 'El formato del campo :attribute es inválido.',
     'required'             => 'El campo :attribute es obligatorio.',
     'required_if'          => 'El campo :attribute es obligatorio cuando el campo :other es :value.',

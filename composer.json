@@ -14,7 +14,8 @@
         "phpunit/phpunit": "~4.0",
         "phpspec/phpspec": "~2.1",
         "maatwebsite/excel": "~2.1.0",
-        "barryvdh/laravel-dompdf": "0.6.*"
+        "barryvdh/laravel-dompdf": "0.6.*",
+        "greggilbert/recaptcha": "dev-master"
     },
     "autoload": {
         "classmap": [
